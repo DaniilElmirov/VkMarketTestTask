@@ -1,6 +1,7 @@
 plugins {
 	alias(libs.plugins.androidApplication)
 	alias(libs.plugins.jetbrainsKotlinAndroid)
+	alias(libs.plugins.ksp)
 }
 
 android {
@@ -43,4 +44,17 @@ dependencies {
 	implementation(libs.material)
 	implementation(libs.androidx.activity)
 	implementation(libs.androidx.constraintlayout)
+
+	implementation(libs.dagger.core)
+	ksp(libs.dagger.compiler)
+
+	implementation(libs.cicerone)
+
+	implementation(libs.shimmer)
+
+	implementation(libs.coil)
+
+	implementation(libs.bundles.retrofit)
+
+	implementation(libs.bundles.elmslie)
 }
