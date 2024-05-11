@@ -1,4 +1,4 @@
-package com.elmirov.vkmarkettesttask.ui.list
+package com.elmirov.vkmarkettesttask.ui.pokemons
 
 import android.os.Bundle
 import android.view.LayoutInflater
