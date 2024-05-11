@@ -1,8 +1,8 @@
-package com.elmirov.vkmarkettesttask.di.module
+package com.elmirov.vkmarkettesttask.di.app.module
 
 import com.elmirov.vkmarkettesttask.data.network.PokemonApi
 import com.elmirov.vkmarkettesttask.data.repository.PokemonRepositoryImpl
-import com.elmirov.vkmarkettesttask.di.annotation.ApplicationScope
+import com.elmirov.vkmarkettesttask.di.app.annotation.ApplicationScope
 import com.elmirov.vkmarkettesttask.domain.repository.PokemonRepository
 import dagger.Binds
 import dagger.Module

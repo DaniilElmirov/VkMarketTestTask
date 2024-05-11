@@ -1,7 +1,7 @@
-package com.elmirov.vkmarkettesttask.di.module
+package com.elmirov.vkmarkettesttask.di.app.module
 
-import com.elmirov.vkmarkettesttask.di.annotation.ApplicationScope
-import com.elmirov.vkmarkettesttask.di.annotation.DispatcherIo
+import com.elmirov.vkmarkettesttask.di.app.annotation.ApplicationScope
+import com.elmirov.vkmarkettesttask.di.app.annotation.DispatcherIo
 import dagger.Module
 import dagger.Provides
 import kotlinx.coroutines.CoroutineDispatcher

@@ -1,7 +1,7 @@
 package com.elmirov.vkmarkettesttask
 
 import android.app.Application
-import com.elmirov.vkmarkettesttask.di.component.DaggerApplicationComponent
+import com.elmirov.vkmarkettesttask.di.app.component.DaggerApplicationComponent
 
 class PokemonApplication: Application() {
     val component by lazy {
