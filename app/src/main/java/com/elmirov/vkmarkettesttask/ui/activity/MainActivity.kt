@@ -1,10 +1,11 @@
-package com.elmirov.vkmarkettesttask
+package com.elmirov.vkmarkettesttask.ui.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.elmirov.vkmarkettesttask.R
 
 class MainActivity : AppCompatActivity() {
 

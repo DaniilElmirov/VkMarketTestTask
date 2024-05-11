@@ -1,6 +1,6 @@
 package com.elmirov.vkmarkettesttask.di.component
 
-import com.elmirov.vkmarkettesttask.MainActivity
+import com.elmirov.vkmarkettesttask.ui.activity.MainActivity
 import com.elmirov.vkmarkettesttask.PokemonApplication
 import com.elmirov.vkmarkettesttask.di.annotation.ApplicationScope
 import com.elmirov.vkmarkettesttask.di.module.DataModule
