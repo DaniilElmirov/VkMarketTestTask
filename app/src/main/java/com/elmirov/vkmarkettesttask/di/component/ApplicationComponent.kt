@@ -4,11 +4,13 @@ import com.elmirov.vkmarkettesttask.MainActivity
 import com.elmirov.vkmarkettesttask.PokemonApplication
 import com.elmirov.vkmarkettesttask.di.annotation.ApplicationScope
 import com.elmirov.vkmarkettesttask.di.module.DataModule
+import com.elmirov.vkmarkettesttask.di.module.DispatcherModule
 import dagger.Component
 
 @ApplicationScope
 @Component(
     modules = [
+        DispatcherModule::class,
         DataModule::class,
     ]
 )
