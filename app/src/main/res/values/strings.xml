@@ -1,3 +1,5 @@
 <resources>
 	<string name="app_name">VkMarketTestTask</string>
+    <string name="pokemons">Pokemons</string>
+    <string name="try_again">Try again</string>
 </resources>
