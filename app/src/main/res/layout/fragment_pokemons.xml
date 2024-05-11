@@ -16,7 +16,8 @@
         android:id="@+id/pokemons"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
         tools:listitem="@layout/pokemon_item" />
 
     <com.facebook.shimmer.ShimmerFrameLayout
@@ -30,14 +31,23 @@
             android:orientation="vertical">
 
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
+
             <include layout="@layout/pokemon_placeholder" />
         </LinearLayout>
 

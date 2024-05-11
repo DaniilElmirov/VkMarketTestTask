@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_8">8dp</dimen>
-    <dimen name="image_width">48dp</dimen>
-    <dimen name="image_height">48dp</dimen>
+    <dimen name="image_width">96dp</dimen>
+    <dimen name="image_height">96dp</dimen>
+    <dimen name="elevation">8dp</dimen>
+    <dimen name="corner_radius">16dp</dimen>
+    <dimen name="text_placeholder_height">24dp</dimen>
 </resources>

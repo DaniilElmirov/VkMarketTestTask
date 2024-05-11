@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_8"
+    android:background="@drawable/pokemon_placeholder_card_shape">
+
+    <View
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_gravity="center"
+        android:background="@drawable/pokemon_placeholder_shape" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_placeholder_height"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_8"
+        android:background="@drawable/pokemon_placeholder_shape"
+        android:gravity="center" />
+
+</LinearLayout>
