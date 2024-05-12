@@ -3,6 +3,7 @@ package com.elmirov.vkmarkettesttask.data.repository
 import com.elmirov.vkmarkettesttask.data.mapper.toEntities
 import com.elmirov.vkmarkettesttask.data.network.PokemonApi
 import com.elmirov.vkmarkettesttask.di.app.annotation.DispatcherIo
+import com.elmirov.vkmarkettesttask.domain.entity.FullPokemon
 import com.elmirov.vkmarkettesttask.domain.entity.PartialPokemon
 import com.elmirov.vkmarkettesttask.domain.entity.Result
 import com.elmirov.vkmarkettesttask.domain.repository.PokemonRepository
@@ -21,4 +22,8 @@ class PokemonRepositoryImpl @Inject constructor(
             api.getAll().toEntities()
         }
     )
+
+    override suspend fun getDetailsByName(name: String): Result<FullPokemon> {
+        TODO("Not yet implemented")
+    }
 }
