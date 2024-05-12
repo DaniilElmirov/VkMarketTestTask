@@ -86,6 +86,10 @@ class DetailsFragment : ElmBaseFragment<DetailsEffect, DetailsState, DetailsEven
         binding.refresh.setOnClickListener {
             store.accept(DetailsEvent.Ui.OnRefreshClick)
         }
+
+        binding.toolbar.setNavigationOnClickListener {
+            store.accept(DetailsEvent.Ui.OnBackClick)
+        }
     }
 
     override fun render(state: DetailsState) {
