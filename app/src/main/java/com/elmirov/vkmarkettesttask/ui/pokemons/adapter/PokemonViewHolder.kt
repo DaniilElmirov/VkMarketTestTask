@@ -11,6 +11,7 @@ import com.elmirov.vkmarkettesttask.domain.entity.PartialPokemon
 
 class PokemonViewHolder(
     parent: ViewGroup,
+    private val onPokemonClick: (String) -> Unit
 ) : RecyclerView.ViewHolder(
     LayoutInflater.from(parent.context).inflate(R.layout.pokemon_item, parent, false)
 ) {
@@ -24,5 +25,9 @@ class PokemonViewHolder(
         }
 
         binding.name.text = partialPokemon.name.replaceFirstChar { it.uppercase() }
+
+        binding.root.setOnClickListener {
+            onPokemonClick(partialPokemon.name)
+        }
     }
 }

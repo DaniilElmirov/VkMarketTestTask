@@ -46,7 +46,11 @@ class PokemonsFragment : ElmBaseFragment<PokemonsEffect, PokemonsState, Pokemons
     }
 
     private val pokemonAdapter: PokemonAdapter by lazy {
-        PokemonAdapter()
+        PokemonAdapter(
+            onPokemonClick = {
+                store.accept(PokemonsEvent.Ui.OnPokemonClick(it))
+            }
+        )
     }
 
     override fun onAttach(context: Context) {
