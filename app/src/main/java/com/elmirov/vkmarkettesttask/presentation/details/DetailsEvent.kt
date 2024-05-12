@@ -8,6 +8,8 @@ sealed interface DetailsEvent {
         data object Init : Ui
 
         data object OnRefreshClick : Ui
+
+        data object OnBackClick : Ui
     }
 
     sealed interface Internal : DetailsEvent {
