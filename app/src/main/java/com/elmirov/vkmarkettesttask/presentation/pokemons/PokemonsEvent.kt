@@ -8,6 +8,8 @@ sealed interface PokemonsEvent {
         data object Init : Ui
 
         data object OnRefreshClick : Ui
+
+        data class OnPokemonClick(val pokemonName: String): Ui
     }
 
     sealed interface Internal : PokemonsEvent {

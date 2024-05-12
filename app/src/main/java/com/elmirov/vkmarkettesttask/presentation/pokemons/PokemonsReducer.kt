@@ -1,9 +1,12 @@
 package com.elmirov.vkmarkettesttask.presentation.pokemons
 
+import com.elmirov.vkmarkettesttask.navigation.PokemonRouter
 import vivid.money.elmslie.core.store.dsl.ScreenDslReducer
 import javax.inject.Inject
 
-class PokemonsReducer @Inject constructor() : ScreenDslReducer<
+class PokemonsReducer @Inject constructor(
+    private val pokemonRouter: PokemonRouter,
+) : ScreenDslReducer<
         PokemonsEvent,
         PokemonsEvent.Ui,
         PokemonsEvent.Internal,
@@ -32,6 +35,10 @@ class PokemonsReducer @Inject constructor() : ScreenDslReducer<
         PokemonsEvent.Ui.OnRefreshClick -> {
             state { copy(loading = true) }
             commands { +PokemonsCommand.Load }
+        }
+
+        is PokemonsEvent.Ui.OnPokemonClick -> {
+            pokemonRouter.openDetails(event.pokemonName)
         }
     }
 }
