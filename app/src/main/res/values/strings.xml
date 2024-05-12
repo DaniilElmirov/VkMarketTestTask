@@ -3,4 +3,5 @@
     <string name="pokemons">Pokemons</string>
     <string name="try_again">Try again</string>
     <string name="unknown_error">Something wrong</string>
+    <string name="details">Details</string>
 </resources>
